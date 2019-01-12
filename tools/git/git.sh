@@ -20,5 +20,13 @@ alias glog='git log --graph --pretty=format:'\''%Cred%h%Creset -
 %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset'\''
 commit';
 
+###################################
+# Alias for git help documentation.
+#
+# Example: gh branch
+#
+###################################
+alias gh="git help";
+
 # Remove all merged branches locally.
 alias gitbdm="git branch | grep -v \"master\" | xargs git branch -d"
