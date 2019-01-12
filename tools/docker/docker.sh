@@ -5,4 +5,5 @@
 ########################################
 
 alias d='docker $*'
-
+alias dps='d ps'
+alias dpsa='dps -a'
