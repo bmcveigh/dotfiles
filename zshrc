@@ -12,3 +12,6 @@ source $ZSH/oh-my-zsh.sh
 
 # for Homebrew installed rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export DOTFILES_ROOT=$HOME/.dotfiles;
+source $DOTFILES_ROOT/aliases/aliases.sh;
