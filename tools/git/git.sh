@@ -16,7 +16,9 @@ alias gitm="git merge --no-ff "
 alias gitpu="git push origin "
 alias gitpl="git pull origin "
 alias gita="git add "
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias glog='git log --graph --pretty=format:'\''%Cred%h%Creset -
+%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset'\''
+commit';
 
 # Remove all merged branches locally.
 alias gitbdm="git branch | grep -v \"master\" | xargs git branch -d"
