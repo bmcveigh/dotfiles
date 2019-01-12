@@ -2,9 +2,11 @@
 
 ## Inspired and forked from Ryan Bates Dot Files
 
-These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
+Check out his dotfiles. [Ryan's Dotfiles](https://github.com/ryanb/dotfiles)
 
 I am running on Mac OS X, but it will likely work on Linux as well.
+
+Also, feel free to fork my implementation of his dotfiles and customize it to your liking.
 
 
 ## Installation
@@ -12,7 +14,7 @@ I am running on Mac OS X, but it will likely work on Linux as well.
 Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/ryanb/dotfiles/blob/custom-bash-zsh/Rakefile) to see exactly what it does.
 
 ```terminal
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+cd && git clone https://github.com/bmcveigh/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 rake install
 ```
@@ -20,37 +22,6 @@ rake install
 After installing, open a new terminal window to see the effects.
 
 Feel free to customize the .zshrc file to match your preference.
-
-
-## Features
-
-Many of the following features are added through the "rbates" Oh My ZSH plugin.
-
-I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
-
-```terminal
-c railsca<tab>
-```
-
-There is also an "h" command which behaves similar, but acts on the home path.
-
-```terminal
-h doc<tab>
-```
-
-Tab completion is also added to rake and cap commands:
-
-```
-rake db:mi<tab>
-cap de<tab>
-```
-
-To speed things up, the results are cached in local .rake_tasks~ and .cap_tasks~. It is smart enough to expire the cache automatically in most cases, but you can simply remove the files to flush the cache.
-
-If you're using git, you'll notice the current branch name shows up in the prompt while in a git repository.
-
-There are several features enabled in Ruby's irb including history and completion. Many convenience methods are added as well such as "ri" which can be used to get inline documentation in IRB. See irbrc file for details.
-
 
 ## Uninstall
 
@@ -72,3 +43,17 @@ chsh -s /bin/bash # change back to Bash if you want
 ```
 
 Then open a new terminal window to see the effects.
+
+## Creating custom scripts
+
+Scripts are autoloaded from the tools directory. Simply create a directory and a <your_script_name>.sh file with
+your script in that directory. Note that it's important to make sure your file has the .sh suffix or else the
+autoloader will not load your script. For example, if I have a tool called foo, I would run the
+following commands from this repository's root directory:
+
+```
+cd tools
+mkdir foo
+cd foo
+touch foo.sh
+```
