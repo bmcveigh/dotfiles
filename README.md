@@ -1,6 +1,6 @@
-# Dotfiles Everywhere
+# Brian McVeigh's Dotfiles
 
-## Inspired by Ryan Bates Dot Files
+## Inspired and forked from Ryan Bates Dot Files
 
 These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
 
