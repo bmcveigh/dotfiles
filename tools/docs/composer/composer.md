@@ -8,4 +8,4 @@ Aliases for PHP composer CLI tool.
 | --------------| ------------------ | --------------- | ------------------------------------------------------- |
 | `c`           | `composer`         | `c install`     | Great if you're too lazy to type in `composer` like me. |
 | `ci`          | `composer install` | `ci --no-dev`   | Install all dependencies for a PHP application.         |
-| `cr`          | `composer require` | `cr drupal/core`| Install all dependencies for a PHP application.         |
+| `cr`          | `composer require` | `cr drupal/core`| Add a new dependency to your composer application.      |
