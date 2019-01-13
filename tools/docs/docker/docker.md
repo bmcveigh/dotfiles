@@ -1,4 +1,4 @@
-## Docker Compose
+## Docker
 
 Aliases and logic for [Docker](https://www.docker.com/).
 
