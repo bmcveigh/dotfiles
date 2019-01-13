@@ -4,6 +4,6 @@
 # @see https://getcomposer.org/
 ####################################
 
-alias composer="php -d memory-limit=-1 /usr/local/bin/composer"
-alias compor="composer require"
-alias compi="composer install"
+alias {composer,c}="php -d memory-limit=-1 /usr/local/bin/composer"
+alias cr="composer require"
+alias ci="composer install"
