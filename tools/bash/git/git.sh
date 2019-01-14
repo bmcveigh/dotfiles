@@ -59,6 +59,7 @@ alias gprum='git pull --rebase upstream master'
 alias gprus='git pull --rebase upstream staging'
 
 # Git push to origin aliases
+alias gpo='git push origin'
 alias gpod='git push origin develop'
 alias gpom='git push origin master'
 alias gpos='git push origin staging'
