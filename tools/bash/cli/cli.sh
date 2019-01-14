@@ -6,4 +6,4 @@
 alias a='alias'
 
 # List all files in a directory, including private files.
-alias l ='ls -lah'
+alias l='ls -lah'
