@@ -4,6 +4,6 @@
 #
 # Example: pwrfile something
 ##################################################################
-function pwrfile() {
+function findf() {
   find . -iname "$1"
 }

@@ -5,6 +5,7 @@
 
 # Git status alias
 alias g='git status -sb'
+alias gs='git status'
 
 alias gitup="git up; gitb -vv"
 alias gitbd="git branch -d"
@@ -82,6 +83,7 @@ alias grm='git rebase master'
 alias grs='git rebase staging'
 
 # Git stash aliases
+alias gsl='git stash list'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 alias gss='git stash save'
