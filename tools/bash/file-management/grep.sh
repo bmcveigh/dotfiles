@@ -7,3 +7,7 @@
 function pwrgrep() {
   find . -type f \( -name '*' -o -name '*.*' -o -name '.*' \) -print0 | xargs -0 grep --color -n "$@"
 }
+
+function findfregex() {
+  find . -type f \( -name '*' -o -name '*.*' -o -name '.*' \) -print0 | xargs -0 grep --color -En "$@"
+}
