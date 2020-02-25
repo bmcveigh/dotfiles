@@ -2,15 +2,33 @@
 # Aliases and functions for Drush.
 # ---------------------------------------------------------------------
 
-# Aliases related to Docksal.
+# =============== Aliases related to Docksal. ==========================
 alias fdr='fin drush'
+
+# Run tests.
+alias ft='fin test'
+
+# Configuration commands.
+alias fdrim='fin drush cim'
+alias fdrex='fin drush cex'
+alias fdrimy='fin drush -y cim'
+alias fdrexy='fin drush -y cex'
+
+# Running DB updates.
 alias fdrudb='fin drush updb'
 alias fdrudby='fin drush -y updb'
+
+# Do grunt work for when checking out a new feature branch.
+alias fdrunew='fin composer install && fin drush -y updb && fin drush -y cim && fin drush cr'
+
+# Get status of Drupal installation.
 alias fdrs='fin drush status'
+
+# Updating features.
 alias fdrfu='fin drush fu'
 alias fdrfuy='fin drush -y fu'
 
-# Aliases related to Lando.
+# =============== Aliases related to Lando. =============================
 alias ldr='lando drush'
 alias ldrudb='lando drush updb'
 alias ldrudby='lando drush -y updb'
