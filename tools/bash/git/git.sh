@@ -93,3 +93,6 @@ alias gd='git diff --color-words'
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -
 %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset'\''
 commit';
+
+# Update feature branch changes, utilizing the Gitflow strategy.
+alias gfu='git stash save && git rebase origin/develop && git stash pop'
