@@ -7,8 +7,8 @@ alias fpsto='fin project stop'
 alias fpr='fin project restart'
 
 # Docksal composer commands.
-alias finc='fin composer'
-alias finci='fin composer install'
-alias fincu='fin composer update'
-alias fincun='fin composer update nothing'
-alias fincr='fin composer require'
+alias finc='fin exec php -d memory_limit=-1 /usr/local/bin/composer'
+alias finci='finc install'
+alias fincu='finc update'
+alias fincun='finc update nothing'
+alias fincr='finc require'
