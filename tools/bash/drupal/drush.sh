@@ -28,6 +28,9 @@ alias fdrs='fin drush status'
 alias fdrfu='fin drush fu'
 alias fdrfuy='fin drush -y fu'
 
+# Get the size of all databases in MB.
+alias fdbsize='fin drush sqlq "SELECT table_schema \"DB Name\", ROUND(SUM(data_length + index_length) / 1024 / 1024, 1) \"DB Size in MB\"  FROM information_schema.tables  GROUP BY table_schema;"'
+
 # =============== Aliases related to Lando. =============================
 alias ldr='lando drush'
 alias ldrudb='lando drush updb'
