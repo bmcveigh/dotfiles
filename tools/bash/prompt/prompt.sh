@@ -17,7 +17,7 @@ parse_git_branch() {
 display_time() {
    date +"%T"
 }
-export PS1="$(echo $COLOR_GREEN)\w$(echo $COLOR_YELLOW)\$(parse_git_branch)$(echo $COLOR_RESET) $(echo $COLOR_RED)@\$(echo $COLOR_RESET) $(echo $COLOR_BLUE)\\D{%T}$(echo $COLOR_RESET)\n> $(echo $COLOR_YELLOW)"
+export PS1="$(echo $COLOR_GREEN)\w$(echo $COLOR_YELLOW)\$(parse_git_branch)$(echo $COLOR_RESET) $(echo $COLOR_RED)@\$(echo $COLOR_RESET) $(echo $COLOR_BLUE)\\D{%T}$(echo $COLOR_RESET)\n> "
 
 # Output colors for CLI ls command.
 # See: https://apple.stackexchange.com/questions/33677/how-can-i-configure-mac-terminal-to-have-color-ls-output
