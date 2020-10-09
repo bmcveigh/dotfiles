@@ -96,3 +96,9 @@ commit';
 
 # Update feature branch changes, utilizing the Gitflow strategy.
 alias gfu='git stash save && git rebase origin/develop && git stash pop'
+
+# Checkout a branch based on a ticket number.
+function git-checkout-ticket() {
+    git checkout $(git branch | grep $1)
+}
+alias gcot="git-checkout-ticket"
