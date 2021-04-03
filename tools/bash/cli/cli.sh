@@ -7,6 +7,3 @@ alias a='alias'
 
 # List all files in a directory, including private files.
 alias l='ls -lahG'
-
-# On Mac, say the bash script is done. Useful for very long scripts.
-alias done='say "The bash script has finished running."'
