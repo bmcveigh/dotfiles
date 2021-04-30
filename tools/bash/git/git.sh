@@ -15,7 +15,7 @@ alias gitmx="git merge --no-ff --no-commit "
 alias gitm="git merge --no-ff "
 
 # Alias for git help documentation.
-alias gh="git help";
+alias gith="git help";
 
 # Remove all merged branches locally.
 alias gbdm="git branch | grep -v \"master\" | xargs git branch -d"
